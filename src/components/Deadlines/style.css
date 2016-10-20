@@ -1,3 +1,11 @@
 .Deadlines {
   margin: 10px;
 }
+.hideMobile {
+  display: none;
+}
+@media (min-width: 40.0rem) {
+  td.hideMobile, th.hideMobile {
+      display: table-cell;
+  }
+}
