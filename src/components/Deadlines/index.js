@@ -27,18 +27,18 @@ const booleanFormatter = (value,unit,suffix,deadline) => {
 }
 const Row = ({title, deadline, id}) => (
   <tr>
-    <td>{id}</td>
+    <td className="hideMobile">{id}</td>
     <td>{title}</td>
-    <td>{deadline && deadline.toLocaleDateString()}</td>
+    <td className="hideMobile">{deadline && deadline.toLocaleDateString()}</td>
     <td>{deadline && <TimeAgo date={deadline}/>}</td>
     <td>{<TimeAgo date={deadline} formatter={booleanFormatter}/>}</td>
   </tr>
 );
 const Head = () => (
   <tr>
-    <th>Lesson</th>
+    <th className="hideMobile">Lesson</th>
     <th>Title</th>
-    <th>Deadline</th>
+    <th className="hideMobile">Deadline</th>
     <th>Time to Deadline</th>
     <th>Status</th>
   </tr>
