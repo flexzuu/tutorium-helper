@@ -4,6 +4,4 @@ const getDate = (dateString) => {
   return date
 }
 
-const getDates = (dateStrings) => dateStrings.map(getDate);
-
-export getDates;
+export { getDate };
