@@ -9,7 +9,7 @@ export default ({data, Row, Head}) => {
         <tbody>
           {
             data.map((obj, index)=>(
-              <Row {...obj} />
+              <Row {...obj} index={index} id={obj.key}/>
             ))
           }
         </tbody>

@@ -3,7 +3,7 @@ const Tutorium = [
   {
     key: '1',
     title: 'Überblick und Historie',
-    deadline: '10/30/2016',
+    deadline: '9/30/2016',
   },
   {
     key: '2',
