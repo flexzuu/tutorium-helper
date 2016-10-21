@@ -1,4 +1,3 @@
-import { getDate } from 'api/Time';
 /** Tutorium-Data:
   key: '1',                         Unique Key also displayed as Lesson number
   title: 'Überblick und Historie',  Lesson Title
@@ -36,14 +35,19 @@ const Tutorium = [
     deadline: null,
   },
 ]
-const addDate = (data) => {
+const convertStringToDate = (dateString, hours, minutes) => {
+  const date = new Date(dateString)
+  date.setHours(hours)
+  date.setMinutes(minutes)
+  return date
+}
+const convertDeadlineStringsToDates = (data) => {
   if (data.deadline) {
     return {
       ...data,
-      deadline: getDate(data.deadline),
+      deadline: convertStringToDate(data.deadline, 18, 50),
     }
   }
   return data;
 }
-const addDeadlineDate = (data) => data.map(addDate);
-export default addDeadlineDate(Tutorium);
+export default Tutorium.map(convertDeadlineStringsToDates);
