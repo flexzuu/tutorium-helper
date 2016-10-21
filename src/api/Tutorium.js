@@ -1,11 +1,5 @@
-/** Tutorium-Data:
-  key: '1',                         Unique Key also displayed as Lesson number
-  title: 'Überblick und Historie',  Lesson Title
-  deadline: '10/30/2016',           Lession deadline (in Month/Day/Year Format) or null
-**/
-const Tutorium = [
-  
-]
+import TutoriumData from 'data/TutoriumData';
+
 const convertStringToDate = (dateString, hours, minutes) => {
   const date = new Date(dateString)
   date.setHours(hours)
@@ -21,4 +15,4 @@ const convertDeadlineStringsToDates = (data) => {
   }
   return data;
 }
-export default Tutorium.map(convertDeadlineStringsToDates);
+export default TutoriumData.map(convertDeadlineStringsToDates);
