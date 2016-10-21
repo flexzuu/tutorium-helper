@@ -3,6 +3,7 @@ import './style.css';
 // Original author: https://github.com/tholman/github-corners
 export default ({bgColor = '#fff', color = '#70B7FD', url = 'http://github.com'}) => (
   <a
+    target="_blank" 
     href={url}
     className="github-corner"
     aria-label="View source on Github"

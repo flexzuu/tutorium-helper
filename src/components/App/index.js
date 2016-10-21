@@ -1,6 +1,7 @@
 import React from 'react';
 import Deadlines from 'components/Deadlines';
 import GithubCorner from 'components/GithubCorner';
+import MadeWithHeart from 'components/MadeWithHeart';
 import './style.css';
 
 export default () => (
@@ -14,5 +15,6 @@ export default () => (
       color="rgb(34, 34, 34)"
       bgColor="#70B7FD"
     />
+    <MadeWithHeart/>
   </div>
 );

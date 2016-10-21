@@ -2,8 +2,6 @@ import React from 'react';
 import TimeAgo from 'react-timeago';
 import Table from 'components/Table';
 import Tutorium from 'api/Tutorium';
-// import { TiThumbsDown, TiThumbsUp } from 'react-icons/ti';
-// import FaBeer from 'react-icons/fa/beer';
 import ThumbsUp from 'components/ThumbsUp';
 import ThumbsDown from 'components/ThumbsDown';
 import './style.css';
