@@ -10,7 +10,7 @@ export default ({bgColor = 'rgb(230, 234, 237)', color = 'black', url = "http://
       backgroundColor: bgColor,
       color,
       textAlign: 'center',
-      position: 'absolute',
+      position: 'fixed',
       left: 0,
       right: 0,
       bottom: 0
