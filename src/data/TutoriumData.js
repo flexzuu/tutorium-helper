@@ -12,7 +12,7 @@ export default [
   {
     key: '2',
     title: 'Zahlensysteme und Textkodierung',
-    deadline: '11/10/2016',
+    deadline: null,
   },
   {
     key: '3',
