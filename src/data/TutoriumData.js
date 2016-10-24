@@ -7,12 +7,12 @@ export default [
   {
     key: '1',
     title: 'Überblick und Historie',
-    deadline: '10/25/2016',
+    deadline: '10/31/2016',
   },
   {
     key: '2',
     title: 'Zahlensysteme und Textkodierung',
-    deadline: null,
+    deadline: '11/10/2016',
   },
   {
     key: '3',
