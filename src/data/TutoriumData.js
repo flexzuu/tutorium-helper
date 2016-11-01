@@ -15,7 +15,7 @@ export default [
     key: '2',
     title: 'Zahlensysteme und Textkodierung',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=143270',
-    deadline: null,
+    deadline: '11/17/2016',
   },
   {
     key: '3',
