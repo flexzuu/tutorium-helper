@@ -23,10 +23,10 @@ const booleanFormatter = (value,unit,suffix,deadline) => {
       return null
   }
 }
-const Row = ({title, deadline, id}) => (
+const Row = ({title, link, deadline, id}) => (
   <tr>
     <td className="hideMobile">{id}</td>
-    <td>{title}</td>
+    <td>{title} <a href={link}>(PDF)</a></td>
     <td className="hideMobile">{deadline && deadline.toLocaleDateString()}</td>
     <td>{deadline && <TimeAgo date={deadline}/>}</td>
     <td>{<TimeAgo date={deadline} formatter={booleanFormatter}/>}</td>
