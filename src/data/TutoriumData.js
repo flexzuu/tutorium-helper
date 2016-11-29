@@ -27,7 +27,7 @@ export default [
     key: '4',
     title: 'Programmierung – Grundlagen',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144767',
-    deadline: null,
+    deadline: '12/15/2016',
   },
   {
     key: '5',
