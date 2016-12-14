@@ -33,7 +33,7 @@ export default [
     key: '5',
     title: 'Programmierung mit VBA',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144768',
-    deadline: null,
+    deadline: '01/12/2017',
   },
   {
     key: '6',
