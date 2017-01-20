@@ -39,6 +39,6 @@ export default [
     key: '6',
     title: 'Rechnerarchitektur',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=146337',
-    deadline: '26/01/2017',
+    deadline: '01/26/2017',
   },
 ]
