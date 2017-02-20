@@ -3,14 +3,14 @@ import './style.css';
 // Original author: https://github.com/tholman/github-corners
 export default ({bgColor = '#fff', color = '#70B7FD', url = 'http://github.com'}) => (
   <a
-    target="_blank" 
+    target="_blank"
     href={url}
     className="github-corner"
     aria-label="View source on Github"
   >
     <svg
-      width="80"
-      height="80"
+      width="40"
+      height="40"
       viewBox="0 0 250 250"
       style={{
         fill: bgColor,

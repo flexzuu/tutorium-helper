@@ -1,6 +1,4 @@
-import gsheets from 'gsheets'
-
-// const sheet = "1Fu1G_0wotPc_1KWOVyeDpZHpp_wDhZ_u1015Tn4Y9cQ";
+import * as gsheets from 'gsheets'
 
 // Convert Excel dates into JS date objects
 //
@@ -18,16 +16,43 @@ const getJsDateFromExcel = (excelDate) => {
 
 }
 
-const getData = (sheet) =>
-  gsheets.getSpreadsheet(sheet)
-    .then(res => gsheets.getWorksheet(sheet, res.worksheets[0].title))
-    .then(res => res.data)
-    .then(data => data.map(
-      o => Object.assign(
-        o,
-        {
-          Deadline: new Date(getJsDateFromExcel(o.Deadline).setHours(23))
-        }
-      )
-    )
-  )
+export const getWorksheet = (spreadsheet, worksheet) =>
+	gsheets.getWorksheet(spreadsheet, worksheet)
+		// .then(res => {
+		// 	console.log(res);
+		// 	return res;
+		// })
+	  .then(res =>
+			Object.assign(
+				res,
+				{
+					updated: new Date(res.updated),
+					data: res.data.map(
+			      o => Object.assign(
+			        {},
+			        {
+								key: o.Key,
+								title: o.Title,
+								link: o.Link,
+			          deadline: new Date(getJsDateFromExcel(o.Deadline).setHours(23)),
+			        }
+			      )
+			    )
+				}
+			)
+	  )
+
+export const getSpreadsheet = (spreadsheet) =>
+	gsheets.getSpreadsheet(spreadsheet)
+		// .then(res => {
+		// 	console.log(res);
+		// 	return res;
+		// })
+	  .then(res =>
+			Object.assign(
+				res,
+				{
+					updated: new Date(res.updated),
+				}
+			)
+	  )

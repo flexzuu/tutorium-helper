@@ -4,8 +4,17 @@
 .hideMobile {
   display: none;
 }
+td, th {
+  padding: 0.2rem 0.5rem;
+}
 @media (min-width: 40.0rem) {
   td.hideMobile, th.hideMobile {
       display: table-cell;
   }
+  td, th {
+    padding: 1.2rem 1.5rem;
+  }
+}
+.file {
+  text-align: right;
 }

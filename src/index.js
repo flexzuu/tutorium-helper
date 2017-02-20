@@ -1,9 +1,12 @@
+import 'milligram/dist/milligram.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'components/App';
-import 'milligram/dist/milligram.css';
+import { withPath } from 'hoc/utils';
 import 'index.css';
+
+const AppWithPath = withPath(App)
 ReactDOM.render(
-  <App />,
+  <AppWithPath />,
   document.getElementById('root')
 );

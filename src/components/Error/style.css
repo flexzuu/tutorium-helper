@@ -1,0 +1,11 @@
+main.Error header {
+  text-align: center;
+  background-color: #BB5A5A;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+main.Error p {
+  margin: 10px;
+  text-align: center;
+}
