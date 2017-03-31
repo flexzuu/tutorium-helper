@@ -9,36 +9,36 @@ export default [
     key: '1',
     title: 'Überblick und Historie',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=143268',
-    deadline: '10/31/2016',
+    deadline: null,
   },
   {
     key: '2',
     title: 'Zahlensysteme und Textkodierung',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=143270',
-    deadline: '11/17/2016',
+    deadline: null,
   },
   {
     key: '3',
     title: 'Business Computing',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144760',
-    deadline: '12/01/2016',
+    deadline: null,
   },
   {
     key: '4',
     title: 'Programmierung – Grundlagen',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144767',
-    deadline: '12/15/2016',
+    deadline: null,
   },
   {
     key: '5',
     title: 'Programmierung mit VBA',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144768',
-    deadline: '01/12/2017',
+    deadline: null,
   },
   {
     key: '6',
     title: 'Rechnerarchitektur',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=146337',
-    deadline: '01/26/2017',
+    deadline: null
   },
 ]
