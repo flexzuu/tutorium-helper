@@ -9,7 +9,7 @@ export default [
     key: '1',
     title: 'Überblick und Historie',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=143268',
-    deadline: null,
+    deadline: '4/18/2017',
   },
   {
     key: '2',
