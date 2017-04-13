@@ -7,7 +7,9 @@ const Error = props => (
       <h1>Error</h1>
     </header>
     <p>Error data not found.</p>
-    <p>Try to navigate to https://url/:spreadsheetID/:course</p>
+    <p>
+      Try to navigate to http://tutorium-helper.surge.sh/:spreadsheetID/:course
+    </p>
   </main>
 );
 
