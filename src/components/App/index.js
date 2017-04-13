@@ -13,6 +13,6 @@ export default () => (
       color="rgb(34, 34, 34)"
       bgColor="#70B7FD"
     />
-    <MadeWithHeart/>
+    <MadeWithHeart />
   </div>
 );

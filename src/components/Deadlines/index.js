@@ -8,39 +8,39 @@ import './style.css';
 const colors = {
   red: '#FF4136',
   green: '#2ECC40',
-}
-const Link = ({url}) => (
+};
+const Link = ({ url }) => (
   <a href={url} rel="external" target="_blank">
     <File />
   </a>
-)
-const booleanFormatter = (value,unit,suffix,deadline) => {
+);
+const booleanFormatter = (value, unit, suffix, deadline) => {
   if (!deadline) {
-    return <ThumbsUp color={colors.green} size={24} />
+    return <ThumbsUp color={colors.green} size={24} />;
   }
   switch (suffix) {
     case 'ago':
-      return <ThumbsDown color={colors.red} size={24} />
+      return <ThumbsDown color={colors.red} size={24} />;
     case 'from now':
-      return <ThumbsUp color={colors.green} size={24} />
+      return <ThumbsUp color={colors.green} size={24} />;
     default:
-      return null
+      return null;
   }
-}
-const Row = ({title, deadline, id, link}) => (
+};
+const Row = ({ title, deadline, id, link }) => (
   <tr>
     <td className="hideMobile">{id}</td>
-    <td className="file">{link && <Link url={link}/>}</td>
+    <td className="file">{link && <Link url={link} />}</td>
     <td>{title}</td>
     <td className="hideMobile">{deadline && deadline.toLocaleDateString()}</td>
-    <td>{deadline && <TimeAgo date={deadline}/>}</td>
-    <td>{<TimeAgo date={deadline} formatter={booleanFormatter}/>}</td>
+    <td>{deadline && <TimeAgo date={deadline} />}</td>
+    <td>{<TimeAgo date={deadline} formatter={booleanFormatter} />}</td>
   </tr>
 );
 const Head = () => (
   <tr>
     <th className="hideMobile">Lesson</th>
-    <th className="file"></th>
+    <th className="file" />
     <th>Title</th>
     <th className="hideMobile">Deadline</th>
     <th>Time to Deadline</th>
@@ -48,7 +48,7 @@ const Head = () => (
   </tr>
 );
 
-export default ({data}) => (
+export default ({ data }) => (
   <section className="Deadlines">
     <Table data={data} Row={Row} Head={Head} />
   </section>
