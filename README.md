@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/flexzuu/tutorium-helper.svg?branch=rewrite)](https://travis-ci.org/flexzuu/tutorium-helper)
+
 # tutorium-helper
 A react app to help organize a tutorium.
 
