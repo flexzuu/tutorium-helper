@@ -1,4 +1,6 @@
 # tutorium-helper
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/flexzuu/tutorium-helper.svg)](https://greenkeeper.io/)
 A react app to help organize a tutorium.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
