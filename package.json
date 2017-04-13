@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
+    "premove": "npm run build",
+    "move": "mv ./build/index.hmtl ./build/200.html",
+    "predeploy": "npm run move",
     "deploy": "surge --project ./build --domain tutorium-helper.surge.sh"
   }
 }
