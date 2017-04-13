@@ -1,5 +1,5 @@
 import { withContext, getContext, branch, renderComponent, lifecycle } from 'recompose'
-import { PropTypes } from 'react'
+import PropTypes from 'prop-types';
 import Error from 'components/Error';
 import Loading from 'components/Loading';
 import { getWorksheet, getSpreadsheet } from 'api/Google';
