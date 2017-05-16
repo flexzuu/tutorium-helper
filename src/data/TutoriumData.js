@@ -21,7 +21,7 @@ export default [
     key: '3',
     title: 'Business Computing',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144760',
-    deadline: null,
+    deadline: '5/23/2017',
   },
   {
     key: '4',
