@@ -27,13 +27,13 @@ export default [
     key: '4',
     title: 'Programmierung – Grundlagen',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144767',
-    deadline: null,
+    deadline: '6/13/2017',
   },
   {
     key: '5',
     title: 'Programmierung mit VBA',
     link: 'https://moodle.thm.de/mod/resource/view.php?id=144768',
-    deadline: null,
+    deadline: '6/20/2017',
   },
   {
     key: '6',
